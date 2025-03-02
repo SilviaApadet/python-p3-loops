@@ -48,9 +48,9 @@ class TestFizzBuzz:
         i = 1
         for line in answer.split('\n'):
             if(line): #answer.split(\n) produces a list that ends in ''
-                if i % 15 == 0: assert line == "FizzBuzz", f"Should have printed 'Buzz' when number is {i}, got {line} instead"
-                elif i % 3 == 0: assert line == "Fizz", f"Should have printed 'Fizz' when number is {i}, got {line} instead"
-                elif i % 5 == 0: assert line == "Buzz", f"Should have printed 'Buzz' when number is {i}, got {line} instead"
+                if i % 15 == 0: assert line == f"FizzBuzz", "Should have printed 'Buzz' when number is {i}, got {line} instead"
+                elif i % 3 == 0: assert line == f"Fizz", "Should have printed 'Fizz' when number is {i}, got {line} instead"
+                elif i % 5 == 0: assert line == f"Buzz", "Should have printed 'Buzz' when number is {i}, got {line} instead"
                 else: assert str(i) == line, f"Should have printed {i}, got {line} instead"
                 i += 1
         
